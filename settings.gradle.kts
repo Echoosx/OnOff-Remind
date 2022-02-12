@@ -6,4 +6,4 @@ pluginManagement {
         maven("https://dl.bintray.com/kotlin/kotlin-eap")
     }
 }
-rootProject.name = "OnOff-Message"
+rootProject.name = "OnOff-Remind"

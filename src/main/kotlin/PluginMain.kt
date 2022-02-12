@@ -17,8 +17,8 @@ import org.echoosx.mirai.plugin.data.RemindMessage.onRemindMessage
 
 object PluginMain : KotlinPlugin(
     JvmPluginDescription(
-        id = "org.echoosx.mirai.plugin.OnOff-Message",
-        name = "OnOff-Message",
+        id = "org.echoosx.mirai.plugin.OnOff-Remind",
+        name = "OnOff-Remind",
         version = "1.0.0"
     ) {
         author("Echoosx")
