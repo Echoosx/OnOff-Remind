@@ -19,7 +19,7 @@ object PluginMain : KotlinPlugin(
     JvmPluginDescription(
         id = "org.echoosx.mirai.plugin.OnOff-Message",
         name = "OnOff-Message",
-        version = "0.1.0"
+        version = "1.0.0"
     ) {
         author("Echoosx")
     }
