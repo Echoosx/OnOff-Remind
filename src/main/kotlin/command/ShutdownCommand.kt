@@ -13,17 +13,17 @@ import net.mamoe.mirai.console.command.SimpleCommand
 import net.mamoe.mirai.console.util.ConsoleExperimentalApi
 import net.mamoe.mirai.message.code.MiraiCode.deserializeMiraiCode
 import net.mamoe.mirai.utils.MiraiLogger
-import org.echoosx.mirai.plugin.PluginMain
+import org.echoosx.mirai.plugin.OnOffRemind
 import org.echoosx.mirai.plugin.data.ContactMessage.offRemindFriend
 import org.echoosx.mirai.plugin.data.ContactMessage.offRemindGroup
 import org.echoosx.mirai.plugin.data.RemindMessage.offRemindMessage
 import kotlin.system.exitProcess
 
 object ShutdownCommand:SimpleCommand(
-    PluginMain,
+    OnOffRemind,
     "stop","shutdown","exit"
 ) {
-    private val logger = PluginMain.logger
+    private val logger = OnOffRemind.logger
     private val closingLock = Mutex()
 
     @OptIn(DelicateCoroutinesApi::class, ConsoleExperimentalApi::class)

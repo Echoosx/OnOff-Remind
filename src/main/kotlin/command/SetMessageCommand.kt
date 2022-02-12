@@ -10,8 +10,7 @@ import net.mamoe.mirai.message.data.MessageChain
 import net.mamoe.mirai.message.data.buildMessageChain
 import net.mamoe.mirai.message.data.isContentBlank
 import net.mamoe.mirai.utils.MiraiExperimentalApi
-import org.echoosx.mirai.plugin.PluginMain
-import org.echoosx.mirai.plugin.command.SetMessageCommand.remove
+import org.echoosx.mirai.plugin.OnOffRemind
 import org.echoosx.mirai.plugin.data.ContactMessage.offRemindFriend
 import org.echoosx.mirai.plugin.data.ContactMessage.offRemindGroup
 import org.echoosx.mirai.plugin.data.ContactMessage.onRemindFriend
@@ -21,11 +20,11 @@ import org.echoosx.mirai.plugin.data.RemindMessage.onRemindMessage
 import java.lang.NumberFormatException
 
 object SetMessageCommand: CompositeCommand(
-    PluginMain,
+    OnOffRemind,
     "remind",
     description = "设置提示消息"
 ) {
-    private val logger = PluginMain.logger
+    private val logger = OnOffRemind.logger
     private const val WAIT_REPLY_TIMEOUT_MS = 30000L
 
     @OptIn(MiraiExperimentalApi::class)

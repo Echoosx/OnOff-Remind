@@ -15,7 +15,7 @@ import org.echoosx.mirai.plugin.data.ContactMessage.onRemindGroup
 import org.echoosx.mirai.plugin.data.RemindMessage
 import org.echoosx.mirai.plugin.data.RemindMessage.onRemindMessage
 
-object PluginMain : KotlinPlugin(
+object OnOffRemind : KotlinPlugin(
     JvmPluginDescription(
         id = "org.echoosx.mirai.plugin.OnOff-Remind",
         name = "OnOff-Remind",
